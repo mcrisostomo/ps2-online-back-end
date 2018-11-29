@@ -1,0 +1,24 @@
+{
+  "name": "ps2-online-back-end",
+  "version": "1.0.0",
+  "description": "Backend module from PS2 OnLine Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcrisostomo/ps2-online-back-end.git"
+  },
+  "author": "Marcus Crisostomo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcrisostomo/ps2-online-back-end/issues"
+  },
+  "homepage": "https://github.com/mcrisostomo/ps2-online-back-end#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
