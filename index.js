@@ -178,6 +178,32 @@ router.patch('/game-region/:id', (req, res) => {
     execSQLQuery(`UPDATE tb_region SET regionName = '${regionName}', regionAlias = '${regionAlias}' WHERE idRegion='${idRegion}'`, res);
 });
 
+// DELETE Method
+router.delete('/game-category/:id', (req, res) => {
+    execSQLQuery('DELETE FROM tb_category WHERE idCategory=' + parseInt(req.params.id), res);
+});
+router.delete('/color-status/:id', (req, res) => {
+    execSQLQuery('DELETE FROM tb_color_status WHERE idStatus=' + parseInt(req.params.id), res);
+});
+router.delete('/dns/:id', (req, res) => {
+    execSQLQuery('DELETE FROM tb_dns WHERE idDNS=' + parseInt(req.params.id), res);
+});
+router.delete('/game-list/:id', (req, res) => {
+    execSQLQuery('DELETE FROM tb_game WHERE idGame=' + parseInt(req.params.id), res);
+});
+router.delete('/game-image/:id', (req, res) => {
+    execSQLQuery('DELETE FROM tb_game_image WHERE idImage=' + parseInt(req.params.id), res);
+});
+router.delete('/game-review/:id', (req, res) => {
+    execSQLQuery('DELETE FROM tb_game_review WHERE idReview=' + parseInt(req.params.id), res);
+});
+router.delete('/original-host/:id', (req, res) => {
+    execSQLQuery('DELETE FROM tb_original_host WHERE idHost=' + parseInt(req.params.id), res);
+});
+router.delete('/game-region/:id', (req, res) => {
+    execSQLQuery('DELETE FROM tb_region WHERE idRegion=' + parseInt(req.params.id), res);
+});
+
 app.use('/', router);
 
 app.listen(port);
