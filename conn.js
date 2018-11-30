@@ -2,8 +2,8 @@ const mysql = require('mysql');
 
 module.exports.execSQLQuery = function(sqlQry, res) {
     const con = mysql.createConnection({
-        host: 'localhost',
-        port: '3306',
+        host: '',
+        port: '',
         user: '',
         password: '',
         database: ''
